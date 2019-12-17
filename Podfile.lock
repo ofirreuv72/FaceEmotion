@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (4.9.1)
+  - MarqueeLabel/Swift (3.2.1)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - NotificationBannerSwift (2.0.1):
+    - MarqueeLabel/Swift (~> 3.2.0)
+    - SnapKit (~> 4.2.0)
+  - PromiseKit (6.12.0):
+    - PromiseKit/CorePromise (= 6.12.0)
+    - PromiseKit/Foundation (= 6.12.0)
+    - PromiseKit/UIKit (= 6.12.0)
+  - PromiseKit/CorePromise (6.12.0)
+  - PromiseKit/Foundation (6.12.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIImagePickerController (6.12.0):
+    - PromiseKit/UIKit
+  - PromiseKit/UIKit (6.12.0):
+    - PromiseKit/CorePromise
+  - Result (4.1.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - Moya (~> 13.0)
+  - NotificationBannerSwift (= 2.0.1)
+  - PromiseKit (~> 6.8)
+  - PromiseKit/UIImagePickerController
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - MarqueeLabel
+    - Moya
+    - NotificationBannerSwift
+    - PromiseKit
+    - Result
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  NotificationBannerSwift: 007774aa590cc9680647b92b2f217bef5c00c32c
+  PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 6ed19dba0646bda6be015ee701ceb870126b33e4
+
+COCOAPODS: 1.8.4

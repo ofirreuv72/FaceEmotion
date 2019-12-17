@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B29AAF923A2F15900E43BFC /* FaceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B29AAF823A2F15900E43BFC /* FaceApi.swift */; };
+		0B29AAFB23A2FBEA00E43BFC /* FaceApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B29AAFA23A2FBEA00E43BFC /* FaceApiResponse.swift */; };
+		0B2FCF1A23A5B08B0047EC47 /* FaceDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2FCF1923A5B08B0047EC47 /* FaceDetectionService.swift */; };
+		0B65640523A62AE50068E090 /* UIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B65640423A62AE50068E090 /* UIService.swift */; };
+		0B88587423A2E1D100B80B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B88587323A2E1D100B80B9D /* AppDelegate.swift */; };
+		0B88587623A2E1D100B80B9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B88587523A2E1D100B80B9D /* ViewController.swift */; };
+		0B88587923A2E1D100B80B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B88587723A2E1D100B80B9D /* Main.storyboard */; };
+		0B88587B23A2E1D200B80B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B88587A23A2E1D200B80B9D /* Assets.xcassets */; };
+		0B88587E23A2E1D200B80B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B88587C23A2E1D200B80B9D /* LaunchScreen.storyboard */; };
+		0B88588923A2E1D300B80B9D /* FaceEmotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B88588823A2E1D300B80B9D /* FaceEmotionTests.swift */; };
+		0BA2ADFA23A5B1F500558DE7 /* DefaultFaceDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA2ADF923A5B1F500558DE7 /* DefaultFaceDetectionService.swift */; };
+		0BA2ADFC23A5B28400558DE7 /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA2ADFB23A5B28400558DE7 /* ImageUtil.swift */; };
+		0BA2ADFE23A5C5EA00558DE7 /* DefaultUIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA2ADFD23A5C5EA00558DE7 /* DefaultUIService.swift */; };
+		0BBAB7D223A654D1001F904F /* IndirectFaceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAB7D123A654D1001F904F /* IndirectFaceApi.swift */; };
+		1B661C721F2190B9DC26E013 /* Pods_FaceEmotionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFE6CFF7553A84C59677C62 /* Pods_FaceEmotionTests.framework */; };
+		53566B0E7B57A8488E9947A2 /* Pods_FaceEmotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D2DCD2EF5A94E98E39AB08 /* Pods_FaceEmotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B88588523A2E1D300B80B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B88586823A2E1D100B80B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B88586F23A2E1D100B80B9D;
+			remoteInfo = FaceEmotion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B29AAF823A2F15900E43BFC /* FaceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceApi.swift; sourceTree = "<group>"; };
+		0B29AAFA23A2FBEA00E43BFC /* FaceApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceApiResponse.swift; sourceTree = "<group>"; };
+		0B2FCF1923A5B08B0047EC47 /* FaceDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionService.swift; sourceTree = "<group>"; };
+		0B65640423A62AE50068E090 /* UIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIService.swift; sourceTree = "<group>"; };
+		0B88587023A2E1D100B80B9D /* FaceEmotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceEmotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B88587323A2E1D100B80B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B88587523A2E1D100B80B9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B88587823A2E1D100B80B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B88587A23A2E1D200B80B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B88587D23A2E1D200B80B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B88587F23A2E1D200B80B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B88588423A2E1D300B80B9D /* FaceEmotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceEmotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B88588823A2E1D300B80B9D /* FaceEmotionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceEmotionTests.swift; sourceTree = "<group>"; };
+		0B88588A23A2E1D300B80B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BA2ADF923A5B1F500558DE7 /* DefaultFaceDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFaceDetectionService.swift; sourceTree = "<group>"; };
+		0BA2ADFB23A5B28400558DE7 /* ImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
+		0BA2ADFD23A5C5EA00558DE7 /* DefaultUIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUIService.swift; sourceTree = "<group>"; };
+		0BBAB7D123A654D1001F904F /* IndirectFaceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndirectFaceApi.swift; sourceTree = "<group>"; };
+		2DF0168BA3FACE8AD0D432C6 /* Pods-FaceEmotion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceEmotion.release.xcconfig"; path = "Target Support Files/Pods-FaceEmotion/Pods-FaceEmotion.release.xcconfig"; sourceTree = "<group>"; };
+		2F3EE64647CFA59B34DBE879 /* Pods-FaceEmotion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceEmotion.debug.xcconfig"; path = "Target Support Files/Pods-FaceEmotion/Pods-FaceEmotion.debug.xcconfig"; sourceTree = "<group>"; };
+		6F68B60430E8CCE00056AB3D /* Pods-FaceEmotionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceEmotionTests.debug.xcconfig"; path = "Target Support Files/Pods-FaceEmotionTests/Pods-FaceEmotionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A09CC54CEB890844229E6D1 /* Pods-FaceEmotionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceEmotionTests.release.xcconfig"; path = "Target Support Files/Pods-FaceEmotionTests/Pods-FaceEmotionTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DFE6CFF7553A84C59677C62 /* Pods_FaceEmotionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceEmotionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D2DCD2EF5A94E98E39AB08 /* Pods_FaceEmotion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceEmotion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B88586D23A2E1D100B80B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53566B0E7B57A8488E9947A2 /* Pods_FaceEmotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B88588123A2E1D300B80B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B661C721F2190B9DC26E013 /* Pods_FaceEmotionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B88586723A2E1D100B80B9D = {
+			isa = PBXGroup;
+			children = (
+				0B88587223A2E1D100B80B9D /* FaceEmotion */,
+				0B88588723A2E1D300B80B9D /* FaceEmotionTests */,
+				0B88587123A2E1D100B80B9D /* Products */,
+				0C58C7AD9F4559E83B704061 /* Pods */,
+				1F8CC9706556A4F3B2D3991E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B88587123A2E1D100B80B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B88587023A2E1D100B80B9D /* FaceEmotion.app */,
+				0B88588423A2E1D300B80B9D /* FaceEmotionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B88587223A2E1D100B80B9D /* FaceEmotion */ = {
+			isa = PBXGroup;
+			children = (
+				0B88587323A2E1D100B80B9D /* AppDelegate.swift */,
+				0B88587523A2E1D100B80B9D /* ViewController.swift */,
+				0B88587723A2E1D100B80B9D /* Main.storyboard */,
+				0B88587A23A2E1D200B80B9D /* Assets.xcassets */,
+				0B88587C23A2E1D200B80B9D /* LaunchScreen.storyboard */,
+				0B88587F23A2E1D200B80B9D /* Info.plist */,
+				0B29AAF823A2F15900E43BFC /* FaceApi.swift */,
+				0B29AAFA23A2FBEA00E43BFC /* FaceApiResponse.swift */,
+				0B2FCF1923A5B08B0047EC47 /* FaceDetectionService.swift */,
+				0BA2ADF923A5B1F500558DE7 /* DefaultFaceDetectionService.swift */,
+				0BA2ADFB23A5B28400558DE7 /* ImageUtil.swift */,
+				0BA2ADFD23A5C5EA00558DE7 /* DefaultUIService.swift */,
+				0B65640423A62AE50068E090 /* UIService.swift */,
+				0BBAB7D123A654D1001F904F /* IndirectFaceApi.swift */,
+			);
+			path = FaceEmotion;
+			sourceTree = "<group>";
+		};
+		0B88588723A2E1D300B80B9D /* FaceEmotionTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B88588823A2E1D300B80B9D /* FaceEmotionTests.swift */,
+				0B88588A23A2E1D300B80B9D /* Info.plist */,
+			);
+			path = FaceEmotionTests;
+			sourceTree = "<group>";
+		};
+		0C58C7AD9F4559E83B704061 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F3EE64647CFA59B34DBE879 /* Pods-FaceEmotion.debug.xcconfig */,
+				2DF0168BA3FACE8AD0D432C6 /* Pods-FaceEmotion.release.xcconfig */,
+				6F68B60430E8CCE00056AB3D /* Pods-FaceEmotionTests.debug.xcconfig */,
+				8A09CC54CEB890844229E6D1 /* Pods-FaceEmotionTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1F8CC9706556A4F3B2D3991E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0D2DCD2EF5A94E98E39AB08 /* Pods_FaceEmotion.framework */,
+				9DFE6CFF7553A84C59677C62 /* Pods_FaceEmotionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B88586F23A2E1D100B80B9D /* FaceEmotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B88588D23A2E1D300B80B9D /* Build configuration list for PBXNativeTarget "FaceEmotion" */;
+			buildPhases = (
+				3AFF3441450BD92592415F16 /* [CP] Check Pods Manifest.lock */,
+				0B88586C23A2E1D100B80B9D /* Sources */,
+				0B88586D23A2E1D100B80B9D /* Frameworks */,
+				0B88586E23A2E1D100B80B9D /* Resources */,
+				224D93E458C192967639452E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceEmotion;
+			productName = FaceEmotion;
+			productReference = 0B88587023A2E1D100B80B9D /* FaceEmotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B88588323A2E1D300B80B9D /* FaceEmotionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B88589023A2E1D300B80B9D /* Build configuration list for PBXNativeTarget "FaceEmotionTests" */;
+			buildPhases = (
+				4E7016F5E62D92C723224CA0 /* [CP] Check Pods Manifest.lock */,
+				0B88588023A2E1D300B80B9D /* Sources */,
+				0B88588123A2E1D300B80B9D /* Frameworks */,
+				0B88588223A2E1D300B80B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B88588623A2E1D300B80B9D /* PBXTargetDependency */,
+			);
+			name = FaceEmotionTests;
+			productName = FaceEmotionTests;
+			productReference = 0B88588423A2E1D300B80B9D /* FaceEmotionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B88586823A2E1D100B80B9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.nophir;
+				TargetAttributes = {
+					0B88586F23A2E1D100B80B9D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0B88588323A2E1D300B80B9D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0B88586F23A2E1D100B80B9D;
+					};
+				};
+			};
+			buildConfigurationList = 0B88586B23A2E1D100B80B9D /* Build configuration list for PBXProject "FaceEmotion" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B88586723A2E1D100B80B9D;
+			productRefGroup = 0B88587123A2E1D100B80B9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B88586F23A2E1D100B80B9D /* FaceEmotion */,
+				0B88588323A2E1D300B80B9D /* FaceEmotionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B88586E23A2E1D100B80B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B88587E23A2E1D200B80B9D /* LaunchScreen.storyboard in Resources */,
+				0B88587B23A2E1D200B80B9D /* Assets.xcassets in Resources */,
+				0B88587923A2E1D100B80B9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B88588223A2E1D300B80B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		224D93E458C192967639452E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceEmotion/Pods-FaceEmotion-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceEmotion/Pods-FaceEmotion-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceEmotion/Pods-FaceEmotion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AFF3441450BD92592415F16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceEmotion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E7016F5E62D92C723224CA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceEmotionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B88586C23A2E1D100B80B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA2ADFA23A5B1F500558DE7 /* DefaultFaceDetectionService.swift in Sources */,
+				0BA2ADFC23A5B28400558DE7 /* ImageUtil.swift in Sources */,
+				0B29AAFB23A2FBEA00E43BFC /* FaceApiResponse.swift in Sources */,
+				0BA2ADFE23A5C5EA00558DE7 /* DefaultUIService.swift in Sources */,
+				0B65640523A62AE50068E090 /* UIService.swift in Sources */,
+				0B29AAF923A2F15900E43BFC /* FaceApi.swift in Sources */,
+				0B88587623A2E1D100B80B9D /* ViewController.swift in Sources */,
+				0BBAB7D223A654D1001F904F /* IndirectFaceApi.swift in Sources */,
+				0B2FCF1A23A5B08B0047EC47 /* FaceDetectionService.swift in Sources */,
+				0B88587423A2E1D100B80B9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B88588023A2E1D300B80B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B88588923A2E1D300B80B9D /* FaceEmotionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B88588623A2E1D300B80B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B88586F23A2E1D100B80B9D /* FaceEmotion */;
+			targetProxy = 0B88588523A2E1D300B80B9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B88587723A2E1D100B80B9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B88587823A2E1D100B80B9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B88587C23A2E1D200B80B9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B88587D23A2E1D200B80B9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B88588B23A2E1D300B80B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B88588C23A2E1D300B80B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B88588E23A2E1D300B80B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3EE64647CFA59B34DBE879 /* Pods-FaceEmotion.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYANLH8J6;
+				INFOPLIST_FILE = FaceEmotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nophir.FaceEmotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B88588F23A2E1D300B80B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF0168BA3FACE8AD0D432C6 /* Pods-FaceEmotion.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PYANLH8J6;
+				INFOPLIST_FILE = FaceEmotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nophir.FaceEmotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B88589123A2E1D300B80B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F68B60430E8CCE00056AB3D /* Pods-FaceEmotionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FaceEmotionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nophir.FaceEmotionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceEmotion.app/FaceEmotion";
+			};
+			name = Debug;
+		};
+		0B88589223A2E1D300B80B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A09CC54CEB890844229E6D1 /* Pods-FaceEmotionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FaceEmotionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nophir.FaceEmotionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceEmotion.app/FaceEmotion";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B88586B23A2E1D100B80B9D /* Build configuration list for PBXProject "FaceEmotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B88588B23A2E1D300B80B9D /* Debug */,
+				0B88588C23A2E1D300B80B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B88588D23A2E1D300B80B9D /* Build configuration list for PBXNativeTarget "FaceEmotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B88588E23A2E1D300B80B9D /* Debug */,
+				0B88588F23A2E1D300B80B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B88589023A2E1D300B80B9D /* Build configuration list for PBXNativeTarget "FaceEmotionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B88589123A2E1D300B80B9D /* Debug */,
+				0B88589223A2E1D300B80B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B88586823A2E1D100B80B9D /* Project object */;
+}
