@@ -51,19 +51,22 @@ class FaceDetectionViewController: UIViewController {
     private func analyze() {
         guard let image = imageView.image else { return  }
         
-        
         activityIndicator.startAnimating()
         faceDetectionService.analyze(image: image, id:imageId).done { result  in
             let (id, response) = result
             guard id == self.imageId else {
                 return
             }
-
+            
             self.setAnalysisResults(image: response.croppedImage, text: response.emotion)
         }.catch { error in
-            let banner = NotificationBanner(title: "An error occured", subtitle: "Please try again", style: .danger)
+            var banner = NotificationBanner(title: "An error occured", subtitle: "Please try again", style: .danger)
+            if let error = error as? FaceDetectionServiceError {
+                if error == .didNotDetectFace {
+                    banner = NotificationBanner(title: "No face detected", subtitle: "Please try again", style: .warning)
+                }
+            }
             banner.show()
-
         }.finally {
             self.activityIndicator.stopAnimating()
         }
