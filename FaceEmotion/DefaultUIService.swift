@@ -70,7 +70,7 @@ class DefaultUIService : NSObject, UIService, UIImagePickerControllerDelegate, U
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            resolver.fulfill(ImageUtil.removeRotationForImage(image: image))
+            resolver.fulfill(image)
         } else {
             resolver.reject(UIServiceError.noImage)
         }

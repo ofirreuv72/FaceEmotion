@@ -41,7 +41,8 @@ extension FaceApi : TargetType {
     var task: Task {
         switch self {
         case .analyzeImage(let image):
-            return .requestCompositeData(bodyData: ImageUtil.imageToData(image: image), urlParameters: parameters!)
+            let compressed = ImageUtil.compressImage(image: image)
+            return .requestCompositeData(bodyData: ImageUtil.imageToData(image: compressed), urlParameters: parameters!)
         }
     }
     

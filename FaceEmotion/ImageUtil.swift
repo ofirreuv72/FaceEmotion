@@ -17,11 +17,11 @@ struct ImageUtil {
         image.draw(in: CGRect(origin: CGPoint(x: 0, y: 0), size: image.size))
         let normalizedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
-        return compressImage(image: normalizedImage)
+        return normalizedImage
     }
     
     static func imageToData(image: UIImage) -> Data {
-        let jpgData = image.jpegData(compressionQuality: 1.0)
+        let jpgData = image.jpegData(compressionQuality: 0.1)
         return jpgData!
     }
 
