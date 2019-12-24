@@ -69,6 +69,7 @@ class DefaultUIService : NSObject, UIService, UIImagePickerControllerDelegate, U
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        NSLog("\(#function)")
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             resolver.fulfill(image)
         } else {
