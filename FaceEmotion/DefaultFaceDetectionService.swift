@@ -8,7 +8,8 @@ class DefaultFaceDetectionService : FaceDetectionService {
         return Promise<(Int,FaceDetectionServiceResponse)> { seal in
             DispatchQueue.global(qos: .userInitiated).async {
                 let rotated = ImageUtil.removeRotationForImage(image: image)
-                provider.request(.analyzeImage(image: rotated)) { result in
+                provider.request(.analyzeImage(image: rotated), callbackQueue: DispatchQueue.global(qos: .userInitiated))
+                { result in
                     switch result {
                     case let .success(moyaResponse):
                         guard let faceApiResponse = try? JSONDecoder().decode([Face].self, from:moyaResponse.data)  else {
