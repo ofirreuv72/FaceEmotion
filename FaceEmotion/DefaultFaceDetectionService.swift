@@ -4,7 +4,7 @@ import PromiseKit
 class DefaultFaceDetectionService : FaceDetectionService {
     
     func analyze(image: UIImage, id:Int) -> Promise<(Int,FaceDetectionServiceResponse)> {
-        let provider = MoyaProvider<IndirectFaceApi>() 
+        let provider = MoyaProvider<FaceApi>() 
         return Promise<(Int,FaceDetectionServiceResponse)> { seal in
             provider.request(.analyzeImage(image: image)) { result in
                 switch result {
